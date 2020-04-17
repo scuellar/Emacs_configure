@@ -19,12 +19,14 @@ You will need to restart emacs.
 Add the following to ~/.emacs 
 
 ```(savehist-mode 1)
+
 ```
 
 ### 2. Let Emacs use the same path as shell (Terminal):
 
 In Emacs (Using MELPA) :
 ```M-x package-install-file RET exec-path-from-shell
+
 ```
 Then add the following to .emacs:
 
