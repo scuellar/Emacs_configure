@@ -45,6 +45,13 @@ Always open emacs with the shell path
 (exec-path-from-shell-initialize))
 ```
 
+Then add the following to your `custom-set-variables` line (or merge it approprietly)
+
+```
+ '(package-selected-packages
+   (quote (exec-path-from-shellpackage)))
+```
+
 ### 4. Disable annoying bells
 
 Disable the annoying bell when scrolling
