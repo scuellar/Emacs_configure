@@ -36,8 +36,9 @@ Then add the following to .emacs:
 
 Always open emacs with the shell path
 eg. this is necessary for Emacs to see coqtop 
-(when (memq window-system '(mac ns))
+``(when (memq window-system '(mac ns))
   (exec-path-from-shell-initialize))
+``
 
 ### 4. Disable annoying bells
 
