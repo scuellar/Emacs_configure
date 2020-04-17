@@ -32,7 +32,14 @@ Then add the following to .emacs:
   (exec-path-from-shell-initialize))
  ```
 
-### 3. Disable annoying bells
+### 3. Add shell path to emacs.
+
+Always open emacs with the shell path
+eg. this is necessary for Emacs to see coqtop 
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
+
+### 4. Disable annoying bells
 
 Disable the annoying bell when scrolling
 ```
