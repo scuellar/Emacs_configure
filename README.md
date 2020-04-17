@@ -23,7 +23,9 @@ Add the following to ~/.emacs
 ### 2. Let Emacs use the same path as shell (Terminal):
 
 In Emacs (Using MELPA) :
+
 `M-x package-install-file RET exec-path-from-shell`
+
 Then add the following to .emacs:
 
 ```(when (memq window-system '(mac ns))
@@ -33,11 +35,11 @@ Then add the following to .emacs:
 ## COQ
 ### 1. Company-coq
 (Needs MELPA)
-```M-x package-refresh-contents RET 
-```
+
+`M-x package-refresh-contents RET `
+
 followed by 
-```M-x package-install RET company-coq RET
-```
+`M-x package-install RET company-coq RET`
 
 Add the following to .emacs
 
