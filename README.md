@@ -35,7 +35,9 @@ Then add the following to .emacs:
 ### 3. Add shell path to emacs.
 
 Always open emacs with the shell path
+
 (e.g. this is necessary for Emacs to see GHC)
+
 (e.g. this is necessary for Emacs to see coqtop)
 
 ```
