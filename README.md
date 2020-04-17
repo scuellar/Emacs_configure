@@ -30,7 +30,7 @@ Then add the following to .emacs:
 
 ```(when (memq window-system '(mac ns))
   (exec-path-from-shell-initialize))
- ```
+```
 
 ### 3. Add shell path to emacs.
 
@@ -38,8 +38,9 @@ Always open emacs with the shell path
 (e.g. this is necessary for Emacs to see GHC)
 (e.g. this is necessary for Emacs to see coqtop)
 
-```(when (memq window-system '(mac ns))
-  (exec-path-from-shell-initialize))
+```
+(when (memq window-system '(mac ns))
+(exec-path-from-shell-initialize))
 ```
 
 ### 4. Disable annoying bells
