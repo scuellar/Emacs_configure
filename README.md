@@ -46,3 +46,29 @@ Add the following to .emacs
 ```;; Load company-coq when opening Coq files
 (add-hook 'coq-mode-hook #'company-coq-mode)
 ```
+
+ ## Haskell 
+ 
+ See [Haskell mode](https://github.com/haskell/haskell-mode).
+ 
+Add the following to .emacs. If you already have custom-set-variables, merge its contents:
+
+```(require 'package)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-archives
+   (quote
+    (("gnu" . "https://elpa.gnu.org/packages/")
+     ("melpa" . "https://melpa.org/packages/")))))
+(package-initialize)
+```
+Then run emacs, and evaluate:
+
+`M-x package-refresh-contents`
+and then follow by
+`M-x package-install RET haskell-mode`
+ 
+ 
