@@ -26,7 +26,7 @@ This is necessary for Emacs to see GHC or to see coqtop)
 
 In Emacs (Using MELPA) :
 
-`M-x package-install-file RET exec-path-from-shell`
+`M-x package-install RET exec-path-from-shell`
 
 Then add the following to .emacs:
 
