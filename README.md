@@ -22,34 +22,17 @@ Add the following to ~/.emacs
 
 ### 2. Let Emacs use the same path as shell (Terminal):
 
+This is necessary for Emacs to see GHC or to see coqtop)
+
 In Emacs (Using MELPA) :
 
 `M-x package-install-file RET exec-path-from-shell`
 
 Then add the following to .emacs:
 
-```(when (memq window-system '(mac ns))
-  (exec-path-from-shell-initialize))
-```
-
-### 3. Add shell path to emacs.
-
-Always open emacs with the shell path
-
-(e.g. this is necessary for Emacs to see GHC)
-
-(e.g. this is necessary for Emacs to see coqtop)
-
 ```
 (when (memq window-system '(mac ns))
 (exec-path-from-shell-initialize))
-```
-
-Then add the following to your `custom-set-variables` line (or merge it approprietly)
-
-```
- '(package-selected-packages
-   (quote (exec-path-from-shellpackage)))
 ```
 
 ### 4. Disable annoying bells
